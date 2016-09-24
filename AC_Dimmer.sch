@@ -1,0 +1,232 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:HouseParts
+LIBS:ESP8266
+LIBS:relays
+LIBS:g5v2
+LIBS:LED_Alarm-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R203
+U 1 1 57DD865A
+P 3050 2000
+F 0 "R203" H 3080 2020 50  0000 L CNN
+F 1 "180" H 3080 1960 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 3050 2000 50  0001 C CNN
+F 3 "" H 3050 2000 50  0000 C CNN
+	1    3050 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R204
+U 1 1 57DD8661
+P 3450 2000
+F 0 "R204" H 3480 2020 50  0000 L CNN
+F 1 "24k" H 3480 1960 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 3450 2000 50  0001 C CNN
+F 3 "" H 3450 2000 50  0000 C CNN
+	1    3450 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C201
+U 1 1 57DD8668
+P 3250 2200
+F 0 "C201" H 3260 2270 50  0000 L CNN
+F 1 ".01u" H 3260 2120 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 3250 2200 50  0001 C CNN
+F 3 "" H 3250 2200 50  0000 C CNN
+F 4 "MKS2G021001A00KA00" H 3250 2200 60  0001 C CNN "MFP"
+F 5 "No" H 3250 2200 60  0001 C CNN "Critical"
+	1    3250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRIAC U202
+U 1 1 57DD866F
+P 4300 2000
+F 0 "U202" H 4050 2350 50  0000 C CNN
+F 1 "TRIAC" H 4000 1750 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 4300 2000 50  0001 C CNN
+F 3 "" H 4300 2000 50  0000 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOC3020M U201
+U 1 1 57DD8676
+P 2550 2100
+F 0 "U201" H 2340 2290 50  0000 L CNN
+F 1 "MOC3020M" H 2550 2300 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 2350 1900 50  0001 L CIN
+F 3 "" H 2525 2100 50  0000 L CNN
+	1    2550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2200 2850 2200
+Wire Wire Line
+	2850 2000 2950 2000
+Wire Wire Line
+	3150 2000 3350 2000
+Wire Wire Line
+	3250 2100 3250 2000
+Connection ~ 3250 2000
+Wire Wire Line
+	3550 2000 3550 1600
+Wire Wire Line
+	3550 1600 4300 1600
+Wire Wire Line
+	3250 2300 3250 2550
+Wire Wire Line
+	4300 2250 4300 2650
+$Comp
+L CONN_01X02 ACDIM201
+U 1 1 57DD8687
+P 5050 2600
+F 0 "ACDIM201" H 5000 2800 50  0000 C CNN
+F 1 "CONN_01X02" V 5150 2600 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 5050 2600 50  0001 C CNN
+F 3 "" H 5050 2600 50  0000 C CNN
+F 4 "No" H 5050 2600 60  0001 C CNN "Critical"
+	1    5050 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 2550
+Wire Wire Line
+	4650 2550 4650 2850
+$Comp
+L R_Small R201
+U 1 1 57DD8691
+P 2050 2000
+F 0 "R201" H 2080 2020 50  0000 L CNN
+F 1 "1k" H 2080 1960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2050 2000 50  0001 C CNN
+F 3 "" H 2050 2000 50  0000 C CNN
+	1    2050 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R202
+U 1 1 57DD8698
+P 2050 2200
+F 0 "R202" H 2080 2220 50  0000 L CNN
+F 1 "1k" H 2080 2160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2050 2200 50  0001 C CNN
+F 3 "" H 2050 2200 50  0000 C CNN
+	1    2050 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR020
+U 1 1 57DD869F
+P 2200 2350
+F 0 "#PWR020" H 2200 2100 50  0001 C CNN
+F 1 "GNDREF" H 2200 2200 50  0000 C CNN
+F 2 "" H 2200 2350 50  0000 C CNN
+F 3 "" H 2200 2350 50  0000 C CNN
+	1    2200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2350 2200 2200
+Wire Wire Line
+	2150 2200 2250 2200
+Connection ~ 2200 2200
+Wire Wire Line
+	2250 2000 2150 2000
+Wire Wire Line
+	1550 1800 1550 2200
+Wire Wire Line
+	1550 2000 1950 2000
+$Comp
+L Led_Small D201
+U 1 1 57DD86AC
+P 1700 2200
+F 0 "D201" H 1650 2325 50  0000 L CNN
+F 1 "Led_Small" H 1525 2100 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 1700 2200 50  0001 C CNN
+F 3 "" V 1700 2200 50  0000 C CNN
+	1    1700 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 2200 1950 2200
+Wire Wire Line
+	1550 2200 1600 2200
+Connection ~ 1550 2000
+$Comp
+L HT #PWR021
+U 1 1 57DD86B6
+P 3950 1550
+F 0 "#PWR021" H 3950 1670 50  0001 C CNN
+F 1 "HT" H 3950 1640 50  0000 C CNN
+F 2 "" H 3950 1550 50  0000 C CNN
+F 3 "" H 3950 1550 50  0000 C CNN
+	1    3950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR022
+U 1 1 57DD86BC
+P 4650 2850
+F 0 "#PWR022" H 4650 2650 50  0001 C CNN
+F 1 "GNDPWR" H 4650 2720 50  0000 C CNN
+F 2 "" H 4650 2800 50  0000 C CNN
+F 3 "" H 4650 2800 50  0000 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+Text HLabel 1550 1800 0    60   Input ~ 0
+AC_Control
+Wire Wire Line
+	3950 1550 3950 1600
+Connection ~ 3950 1600
+Wire Wire Line
+	4650 2550 4850 2550
+Wire Wire Line
+	4300 2650 4850 2650
+Wire Wire Line
+	3250 2550 4300 2550
+$EndSCHEMATC
