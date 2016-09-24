@@ -8,8 +8,9 @@ _autosave-*
 _saved*
 *.tmp
 
-# zip files:
+# Gerbers:
 *.zip
+Gerbers/*
 
 # Netlist files (exported from Eeschema)
 *.net
