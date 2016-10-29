@@ -1,6 +1,6 @@
 # An LED alarm clock.  
 
-Also known as a ESP8266 controlled PWM driver, lowish power AC Dimmer, and relay driver.
+Also known as a ESP8266 controlled PWM driver, lowish power AC Dimmer, and relay driver.  The schematic is available in PDF form in the PDFs folder, along with the PCB layout.
 
 The ESP controls three different things here:
 
@@ -12,4 +12,8 @@ This board is driven by a 12V input on the left side of the board, above the rel
 
 The programming of the ESP is done with two different switches labeled RESET and PROGRAM, along with a FTDI header.
 
+## Software:
 
+Kicad 4.0.4 mostly, though some work was done with Kicad Master branch.
+
+If you have trouble opening it with Kicad 4.0.4, submit an issue and I'll take care of it.
