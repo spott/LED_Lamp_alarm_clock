@@ -10,7 +10,9 @@ The bottom of the board contains the PWM control chip.  It has 16 LED outputs, o
 
 This board is driven by a 12V input on the left side of the board, above the relay output.  The 12V is guided around the outside of the board in a rather wide copper pour on the bottom of the board, and is also used as the Vin of a SMPS that generates the 3.3V power for the ESP and PWM chip.
 
-The programming of the ESP is done with two different switches labeled RESET and PROGRAM, along with a FTDI header.
+## Programming the board:
+
+The programming of the ESP is done with a push switch (when the LED is lighted, the board is ready to run, when it is off, the board is waiting to be programmed), and a reset switch (the switch pulls reset low).  When the board is waiting to be programmed, a low signal on the DTR pin of the FTDI cable pulls CH_PD low, along with GPIO0 (hopefully, in case the switch is in the wrong position).
 
 ## Software:
 
